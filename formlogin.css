@@ -1,0 +1,161 @@
+body
+{
+    background-color: rgb(248,248,248);
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.login
+{
+    width: 80%;
+    height: 50%;
+    background-color: white;
+    padding: 15px 10px 15px 10px;
+    border-radius: 5px;
+    
+
+}
+.login h3
+{
+  font-size: 22px;
+}
+
+
+.login span a
+{
+  text-decoration: underline;
+  color: black;
+  font-size: 13px;
+  
+}
+.login span
+{
+  color: black;
+  font-size: 13px;
+}
+
+.login form
+{
+  padding: 20px;
+  margin-left: calc(25%);
+}
+
+.form_group
+{
+
+}
+
+.login label
+{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login .textbox
+{
+    padding: 5px;
+    padding-left: 15px;
+    width: 60%;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    
+}
+
+.btn_submit
+{
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 5px !important;
+
+}
+
+.forgetpass span, .forgetpass span a
+{
+  font-size: 13px;
+
+}
+
+/*  Tool tip */
+.mytooltip {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .mytooltip .mytooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    left: calc(15%);
+    top:40px;
+    font-size: 15px;
+    box-shadow: 3px 3px lightgray;
+  
+  /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .mytooltip .mytooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* mũi tên ở phía trên của tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+   
+  }
+  
+/*Responsive*/
+@media only screen and (max-width: 993px) {
+    
+  .login
+  {
+    width: 100%;
+  }
+  .login h3
+  {
+    font-size: 20px;
+  }
+  .login span a, .login span
+  {
+    font-size: 13px;
+  }
+  .login .textbox
+  {
+    width: 100%;
+  }
+  .login form
+  {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .mytooltip .mytooltiptext
+  {
+    width: 50%;
+  }
+  .login p 
+  {
+    margin-left:calc(30%) !important;
+  }
+}
+  

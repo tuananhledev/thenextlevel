@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo_medium.png" type="image/gif" sizes="16x16">
+    <title>The Next Level - Sự lựa chọn của Game thủ đích thực.</title>
+    <!-- font chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet"  href="./styleProduct.css">
+    <!-- Slick Slider -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body>
+    <div class="mobile-menu">
+        <div class="media mobile-user">
+            <img class="align-self-center mr-3 lazyload loaded" src="./image/account.png" width="28" alt="phone" data-was-processed="true">
+            <div class="media-body mobile-user-body">
+                <a rel="nofollow" href="./formlogin.html" class="d-block" title="Đăng nhập" style="font-size: 16px;">Đăng nhập</a>
+                <small>
+                    <a href="./formregister.html" title="Đăng ký" class="font-weight: light">Đăng ký</a> 
+                </small> 
+            </div>
+        </div>
+        <ul class="mobile-menu-list menu-list d-flex flex-column">
+            <li class="menu-item mobile-menu-item">
+                <a href="./index.html">Trang chủ</a>
+            </li>
+            <li class="menu-item mobile-menu-item">
+                <a href="#">Sản phẩm
+                    <span>
+                        <svg class="chevron-down-icon"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item mobile-menu-item">
+                <a href="#">Bộ sư tập
+                    <span>
+                        <svg class="chevron-down-icon"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </a>
+            </li>
+            <li class="menu-item mobile-menu-item">
+                <a href="#">
+                    <img class="flash_sale" src="./image/icon_menu_flashsale.png" alt="sale...">
+                    RANDOM SALE
+                </a>
+            </li>
+            <li class="menu-item mobile-menu-item">
+                <a href="#">Liên hệ</a>
+            </li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+    <div class="go-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+          </svg>
+    </div>
+
+    <!-- -------- Header --------- -->
+
+    <header class="wid_100 header">
+        <div class="container px-md-0">
+            <div class="row d-flex align-items-center">
+                
+                <div class="col-4 header-bar d-lg-none d-block">
+					<div class="toggle-nav btn menu-bar mr-4 ml-0 p-0  d-lg-none d-flex text-white">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+
+                <div class="col-4 col-lg-2 header-left">
+                    <a href="./index.html" class="logo-wrapper d-block">
+                        <img class="img-fluid" src="./image/logo_medium.png" alt="logo">
+                    </a>
+                </div>
+                <div class="mt-2 mt-lg-0 order-3 order-lg-2 col-xl-5 col-lg-4 col-12 header-center">
+                    <div id="form-search" class="custom-input">
+                        <input class="form-control auto-search" type="text" placeholder="Tìm kiếm sản phẩm...">
+                        <button class="btn-search"> 
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="order-2 order-lg-3 col-4 col-xl-5 col-lg-6 header-right">
+                    <ul class="header-left mb-0 float-right list-unstyled d-flex align-items-center">
+						<li class="media d-lg-flex d-none hotline">
+							<img class="align-self-center mr-3 lazyload loaded" src="./image/phone.png" width="28" alt="phone" data-was-processed="true">
+								
+							<div class="media-body d-md-flex flex-column d-none">
+								<span>Hỗ trợ khách hàng</span>
+								<a class="font-weight-bold d-block" href="#" title="1234567890">
+									1234567890
+								</a>
+							</div>
+						</li>
+						<li class="ml-4 mr-4 mr-md-3 ml-md-3 media d-lg-flex d-none">
+							<img class="align-self-center mr-3 lazyload loaded" src="./image/account.png" width="28" alt="phone" data-was-processed="true">
+							<div class="media-body d-md-flex flex-column d-none ">
+								<a rel="nofollow" href="./formlogin.html" class="d-block" title="Đăng nhập">Đăng nhập</a>
+								<small>
+								    <a href="./formregister.html" title="Đăng ký" class="font-weight: light">Đăng ký</a> 
+                                </small> 
+								
+							</div>
+						</li>
+						<li class="cartgroup ml-0 mr-2 mr-md-0">
+							<div class="mini-cart">
+								<a class="img-cart d-flex align-items-center" href="#" title="Giỏ hàng">
+									<div class="bag-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+									<span class="mx-2 d-md-block d-none">Giỏ hàng</span>
+									<span class="count_item count_item_pr">0</span>
+								</a>
+								<div class="top-cart-content card d-lg-block d-none">
+									<ul id="cart-sidebar" class="">
+                                        <div class="no-item">
+                                            <p>Không có sản phẩm nào.</p>
+                                        </div>
+                                    </ul>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- -------- Menu --------- -->
+
+    <section class="wid_100 pb-2 d-lg-flex d-none" id="navigation">
+        <div class="container px-md-0">
+            <ul class="menu-list d-flex">
+                <li class="menu-item">
+                    <a href="index.html">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Sản phẩm
+                        <span>
+                            <svg class="chevron-down-icon"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item"><a href="#">T-shirt</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Bộ sư tập
+                        <span>
+                            <svg class="chevron-down-icon"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="sub-menu-item"><a href="#">Game of the year</a></li>
+                        <li class="sub-menu-item"><a href="#">WIBU</a></li>
+                        <li class="sub-menu-item"><a href="#">Cyberpunk 2077</a></li>
+                        <li class="sub-menu-item"><a href="#">Pokemon</a></li>
+                        <li class="sub-menu-item"><a href="#">Hollow Knight</a></li>
+                        <li class="sub-menu-item"><a href="#">League of Legends</a></li>
+                        <li class="sub-menu-item"><a href="#">The Witcher 3</a></li>
+                        <li class="sub-menu-item"><a href="#">Dark Souls</a></li>
+                        <li class="sub-menu-item"><a href="#">Rock Man</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <img class="flash_sale" src="./image/icon_menu_flashsale.png" alt="sale...">
+                        RANDOM SALE
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+     <!-- -------- Hàng chữ dưới Menu --------- -->
+    <div class="wid_100 box_bottom_menu" >
+        <div class="container px-6 bread-crumb" style="color: black;">
+                <a href="#" class="text_bottom_menu">Trang chủ </a> /
+                <a href="#" class="text_bottom_menu"> Tất cả sản phẩm về áo - Mới nhất </a>/ 
+                <a href="#" class="text_bottom_menu" style="color: rgb(156,156,156);">Áo thun Doctor Strange in the Multiverse of Madness</a>
+        </div>
+    </div>
+
+    <!-- -------- Hình ảnh của áo, lựa chọn màu, kích cỡ --------- -->
+    <div class="wid_100 mb-5">
+        <div class="image_product container">
+            <div class="left">
+                <div class ="image_item">
+                    <img src="image/Product/product2.jpg">
+                </div>
+                <div class="image_item">
+                    <img src="image/Product/product2_2.jpg">
+                </div>
+                <div class="image_item">
+                    <img src="image/Product/product2_3.jpg">
+                </div>
+                <div class="image_item">
+                    <img src="image/Product/product2_4.jpg">
+                </div>
+                
+            </div>
+    
+            <div class="right">
+                <div class="title">
+                    <h3 style="font-weight:400; ">Áo thun You Are A Kirby</h3>
+                </div>
+    
+                <div class="status">
+                    <span class="first_status">Thương hiệu:&nbsp<span class="status_name">Next Level</span></span>
+                    &nbsp&nbsp|&nbsp&nbsp
+                    <span class="first_status">Tình trạng:&nbsp<span class="status_name">Còn hàng</span></span>
+                </div>
+                
+                <div class="price">
+                  <span class="new_price">250.000₫</span><span class="old_price">290.000₫</span>
+                </div>
+                <form name="custom_product" method="get" >
+                    <div class="custom_product">
+                        <div class="choose_size">
+                            <div class="header">Kích thước:</div>
+                                <div class="my_btn_group" data-toggle="buttons">
+                                            <label class="btn btn-primary" for="choose_size">
+                                                <input type="radio" name="choose_size" checked value="S" > S
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="radio" name="choose_size" value="M">M
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="radio" name="choose_size"  value="L"> L
+                                            </label>
+                                            <label class="btn btn-primary" style="text-indent: 1px; width: 45px;" value="XL"> 
+                                                <input type="radio" name="choose_size" id="option3">XL
+                                            </label>
+                                            <label class="btn btn-primary" style="text-indent: -1px; width: 50px;" value="XXL" >
+                                                <input type="radio" name="choose_size" id="option3"  > XXL
+                                            </label>
+                                </div>
+                                
+                            </div>
+                        <div class="horizontal_line"></div>
+    
+                        <div class="choose_color">
+                            <div class="header">Màu sắc:</div>
+                            <div class="my_btn_group" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="choose_color" value="pink" id="color_1" >
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="choose_color" value="white" id="color_2">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="horizontal_line"></div>
+    
+                        <div class="choose_quantity">
+                            <div class="header">Số lượng:</div>
+                            <div class="quantity">
+                                <div class="btn_minus btn" onclick="f_btn_minus()">-</div>
+                                <div>
+                                    <input type="number" onclick="f_btn_quantity()" name="choose_quantity" id="choose_quantity" class="form-control btn_quantity" value="1">                            
+                                </div>
+                                <div class="btn_add btn" onclick="f_btn_add()">+ </div>
+                            </div>
+                        </div>
+                        <div class="continer_btn_submmit">
+                            <input  type="submit" class="btn_submmit"   value="THÊM VÀO GIỞ HÀNG">
+                        </div>
+                    </div>
+                </form>
+            </div>
+         </div>
+    </div>
+
+     <!-- --------- Phần chi tiết sản phẩm ---------- -->
+     <section class="w_100">
+         <div class="container detail_product">
+            <div class="row">
+                <div class="col-12 col-lg-9 my-4 ">
+                    <div class="detail-content">
+                        <h2 class="detail_product-header mb-4">Mô tả sản phẩm</h2>
+                        <p>Kirby là một trong những franchise nổi tiếng và bán chạy nhất của Nintendo với hơn 35 triệu bản từng được bán ra. Franchise được yêu thích cũng một phần nhờ nhân vật chính cùng tên là một sinh vật ngoài hành tinh màu hồng với vẻ ngoài vô cùng đáng yêu nhưng lại sở hữu sức mạnh vô cùng "bá đạo": đánh cắp skill của đối phương.<br></p>
+                        <p><br>Hãy cùng The Next Level đến với mẫu áo You Are A Kirby.</p>
+                        <strong >Chi tiết sản phẩm:</strong>
+                        <ul class="detail-list">
+                            <li>Sản phẩm 100% cotton - định lượng 210gsm.</li>
+                            <li>Form áo cơ bản.</li>
+                            <li>Hình được in ở ngực áo với công nghệ in kỹ thuật số.</li>
+                        </ul>
+                        <strong>Quy định về đổi sản phẩm:<br></strong>
+                        
+                        <ul class="detail-list">
+                            <li>Chỉ được đổi sản phẩm duy nhất một lần.</li>
+                            <li>Thời hạn đổi sản phẩm là 7 ngày, kể từ khi nhận hàng.</li>
+                            <li>Sản phẩm đổi phải kèm nguyên hộp, nhãn mác.</li>
+                            <li>Sản phẩm đổi không có dấu hiệu đã qua sử dụng, không giặt tẩy, bám bẩn, biến dạng.</li>
+                        </ul>
+                        <strong>Hướng dẫn chọn size<br></strong>
+                        
+                        <div style="clear: both;"></div>
+
+                        <div  id="hidden_detail">
+                            <img src="image/Product/size.jpg" class="image_size">
+                            <p>Bạn hãy tìm một chiếc áo đang mặc thoải mái nhất của mình, đo và so sánh với bảng phía trên để tìm ra size áo phù hợp nhất với mình nhé.</p>
+                            <p>Một mẹo nhỏ dành cho những bạn có số đo ở giữa hai size thì hãy chọn size lớn hơn để mặc nha ^^.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center showMore-btn mt-4">
+                        <button onclick="showMore()" class="btn btn-main rounded-pill px-4 mx-auto">Xem thêm</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-3 product_sidebar d-lg-block d-none" style="border-left: 1px solid #eee;">
+                    <div class="product-sidebar mt-4">
+                        <p class="font-weight-bold text-white btn product-sidebar-title w-100 text-left">Có thể bạn quan tâm</p>
+                        <ul>
+                            <li class="my-2">
+                                <a href="#" class="media product-sidebar-item">
+                                    <div class="product-sidebar-label">-14%</div>
+                                    <img src="./image/Product/product1.jpg" width="92px" alt="">
+                                    <div class="media-body product-sidebar-info">
+                                        <h3 class="product-sidebar-name">Áo thun You Are A Kirby - 0096</h3>
+                                        <div class="price-box">
+                                            <span class="price">220,000₫</span>
+                                            <span class="compare-price">290,000₫</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="media product-sidebar-item">
+                                    <div class="product-sidebar-label">-14%</div>
+                                    <img src="./image/Product/product2.jpg" width="92px" alt="">
+                                    <div class="media-body product-sidebar-info">
+                                        <h3 class="product-sidebar-name">Áo thun You Are A Kirby - 0096</h3>
+                                        <div class="price-box">
+                                            <span class="price">220,000₫</span>
+                                            <span class="compare-price">290,000₫</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="media product-sidebar-item">
+                                    <div class="product-sidebar-label">-14%</div>
+                                    <img src="./image/Product/product3.jpg" width="92px" alt="">
+                                    <div class="media-body product-sidebar-info">
+                                        <h3 class="product-sidebar-name">Áo thun You Are A Kirby - 0096</h3>
+                                        <div class="price-box">
+                                            <span class="price">220,000₫</span>
+                                            <span class="compare-price">290,000₫</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="media product-sidebar-item">
+                                    <div class="product-sidebar-label">-14%</div>
+                                    <img src="./image/Product/product4.jpg" width="92px" alt="">
+                                    <div class="media-body product-sidebar-info">
+                                        <h3 class="product-sidebar-name">Áo thun You Are A Kirby - 0096</h3>
+                                        <div class="price-box">
+                                            <span class="price">220,000₫</span>
+                                            <span class="compare-price">290,000₫</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="my-2">
+                                <a href="#" class="media product-sidebar-item">
+                                    <div class="product-sidebar-label">-14%</div>
+                                    <img src="./image/Product/product5.jpg" width="92px" alt="">
+                                    <div class="media-body product-sidebar-info">
+                                        <h3 class="product-sidebar-name">Áo thun You Are A Kirby - 0096</h3>
+                                        <div class="price-box">
+                                            <span class="price">220,000₫</span>
+                                            <span class="compare-price">290,000₫</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+     </section>
+
+     <!-- --------- Product Order-------- -->
+     <section class="wid_100 section_products  mb-5">
+        <div class="container product-news-container">
+            <h3 class="product_title mb-4" >
+                <a href="#">Các dòng áo khác tại The Next Level</a>
+            </h3>
+            <div class="slick-product-news">
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product15.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Resident Evil Village - Game of The Year 2021 - 0167</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product14.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun T-Rex Trùm Vũ Khí - 0160</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product15.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Thor: Love and Thunder</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product13.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Spider-Men: Peter Parkers - 0159</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product12.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Doctor Strange in the Multiverse of Madness - 0169</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product11.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Pikachu - 0074</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product10.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Ms. Marvel - 0171</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product9.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Jurassic Park - 0172</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product8.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun What If - 0173</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sl-item">
+                    <div class="item-product-main">
+                        <div class="product-label">-14%</div>
+                        <a class="product-image" href="#">
+                            <img src="./image/Product/product7.jpg" alt="ao thun">
+                            <div class="product-actions">
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                                <button class="btn-actions">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Áo thun Thor: Love and Thunder</a></h3>
+                            <div class="price-box">
+                                <span class="price">250,000₫</span>
+                                <span class="compare-price">290,000₫</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 text-center my-3">
+                <a href="/collections.html" title="Xem tất cả" class="btn btn-main rounded-pill px-4">
+                    Xem tất cả <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+     
+     <!-- Footer -->
+     <footer class="wid_100 footer">
+        <div class=" top-footer">
+            <div class="container">
+                <div class="row margin-15">
+                    <div class="col-md-6 col-sm-10 mx-auto">
+                        <h4 class="text-center">Đăng ký nhận tin</h4>
+                        <form action="#" class="form_register">
+                            <input name="form_register" type="text" placeholder="Nhập địa chỉ Email...">
+                            <button type="submit">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <h5 class="footer-top-info footer-hover">Về chúng tôi</h5>
+                        <p class="footer-hover" style="font-size: 15px;">The Next Level - Sự lựa chọn của mọi Game Thủ</p>
+                        <div class="single-contact footer-hover">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            <span>Địa chỉ: 282 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội</span>
+                        </div>
+                        <div class="single-contact footer-hover">
+                           <div> 
+                               <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <span>Số điện thoại: 0989948814</span>
+                        </div>
+                        <div class="single-contact footer-hover">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <span>Email: thenextlevelvn@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <h5 class="footer-top-info footer-hover">Chính sách</h5>
+
+                        <ul class="footer-menu ">
+                            <li class="footer-hover">Chính sách bán hàng</li>
+                            <li class="footer-hover">Chính sách đổi trả</li>
+                            <li class="footer-hover">Chính sách bảo mật</li>
+                            <li class="footer-hover">Điều khoản dịch vụ</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <h5 class="footer-top-info footer-hover">Thông tin</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-hover">Hướng dẫn chọn size</li>
+                            <li class="footer-hover">Hướng dẫn bảo quản</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <h5 class="footer-top-info footer-hover">Theo dõi chúng tôi</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-hover">Facebook: thenextlevelvn.com.vn</li>
+                            <li class="footer-hover">Instagram: @thenextlevelvn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ionnic icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+
+    <!-- Slick Slider -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    
+
+    <!-- --------- JQuery ---------- -->
+
+    <script>
+       $('.carousel').carousel({
+            autoplay: true,
+            interval: 1000,
+        });
+
+        $('.image_product >.left').slick({
+            slidesToShow: 1,
+            dots:true,
+            prevArrow:`<button type='button' class='slick-prev pull-left slick_arrow'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
+            nextArrow: `<button type='button' class='slick-next pull-right slick_arrow'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
+        });
+
+        $('.slick-product-news').slick({
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                dots: false,
+                autoplay: false,
+                autoplaySpeed: 2000,
+                prevArrow:`<button type='button' class='slick-prev pull-left'><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" width="18px" height="18px" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg></button>`,
+                nextArrow:`<button type='button' class='slick-next pull-right'><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" width="18px" height="18px" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg></button>`,
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                    },
+                    {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+        });
+        
+        
+
+       
+    </script>
+
+    <!-- --------- Script xử lý tương tác ---------- -->
+
+    <script>
+        // Ẩn hiện menu mobile
+        const toggleBtn = document.querySelector('.toggle-nav');
+        const overlay = document.querySelector('.overlay');
+        const menuMoblie = document.querySelector('.mobile-menu');
+        
+        toggleBtn.onclick = ()=> {
+            overlay.classList.toggle('active')
+            menuMoblie.classList.toggle('active')
+        }
+        overlay.onclick = ()=> {
+            overlay.classList.remove('active')
+            menuMoblie.classList.remove('active')
+        }
+
+        // Xử lý Nút go to top
+
+        const goTopBtn = document.querySelector('.go-to-top');
+
+        window.onscroll = ()=> handleGoToTop();
+
+        const handleGoToTop = ()=> {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                goTopBtn.classList.add('show')
+            } else {
+                goTopBtn.classList.remove('show')
+            }
+        }
+        goTopBtn.onclick = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        function f_btn_quantity()
+        {
+            document.getElementById("choose_quantity").style.borderColor =  "#b24592";
+
+        }
+
+        function f_btn_add()
+        {
+           document.getElementById("choose_quantity").value = ++document.getElementById("choose_quantity").value;
+        }   
+
+        function f_btn_minus()
+        {
+            var quantity = document.getElementById("choose_quantity").value;
+            --quantity;
+            if(quantity==0)
+                document.getElementById("choose_quantity").value = 1;
+            else
+                document.getElementById("choose_quantity").value = quantity;
+        }    
+        var isClose = true
+        function showMore() {
+            var showBtn = document.querySelector('.showMore-btn button')
+            var contentEl = document.querySelector('.detail-content')
+            if(isClose) {
+                showBtn.innerHTML = "Rút gọn"
+                contentEl.style.height = 'auto';
+                isClose = !isClose;
+                contentEl.classList.add('no-before');
+
+            }
+            else {
+                showBtn.innerHTML = "Xem thêm"
+                contentEl.style.height = "500px";
+                isClose = !isClose;
+                contentEl.classList.remove('no-before');
+            }
+
+        }
+       
+    </script>
+</body>
+</html>
